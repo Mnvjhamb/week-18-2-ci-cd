@@ -16,7 +16,7 @@ app.post("/hdfcWebhook", async (req, res) => {
         userId: req.body.user_identifier,
         amount: req.body.amount
     };
-    console.log(paymentInformation);
+    console.log(paymentInformation, '---');
 
     try {
         await db.$transaction([
